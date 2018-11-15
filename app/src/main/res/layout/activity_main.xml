@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.dev4u.hv.guia5_ejemplo.MainActivity">
+
+    <RadioGroup
+        android:layout_marginLeft="10dp"
+        android:id="@+id/rdGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rbnNegro"
+            android:checked="true"
+            android:textSize="20sp"
+            android:text="Texto negro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rbnBlanco"
+            android:textSize="20sp"
+            android:text="Texto Blanco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/txtArriba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rdGroup"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="Texto Superior" />
+
+    <Button
+        android:id="@+id/btnAplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Aplicar " />
+    <EditText
+        android:gravity="center"
+        android:hint="texto inferior"
+        android:layout_above="@id/btnAplicar"
+        android:id="@+id/txtAbajo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:src="@drawable/fondo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtArriba"
+        android:layout_above="@id/txtAbajo"
+        android:id="@+id/imageView" />
+
+
+</RelativeLayout>
